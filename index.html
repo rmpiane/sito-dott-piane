@@ -2,109 +2,150 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Sito moderno del Dott. Riccardo Mario Piane – ORL, Chirurgia Maxillo-Facciale, Medicina Estetica" />
-  <meta name="keywords" content="Otorino, Chirurgia Maxillo-Facciale, Medicina Estetica, Siena, Lucca, Piane, ORL">
-  <meta name="author" content="Dott. Riccardo Mario Piane">
-  <title>Dott. Riccardo Mario Piane</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Dott. Riccardo Mario Piane - Otorinolaringoiatra e Chirurgo Maxillo-Facciale</title>
+  <meta name="description" content="Sito ufficiale del Dott. Riccardo Mario Piane, specialista in ORL, chirurgia maxillo-facciale e medicina estetica. Contatti, sedi e approfondimenti." />
+  <meta name="keywords" content="Riccardo Mario Piane, Dott. Piane, otorino Siena, ORL Lucca, chirurgo maxillo-facciale, rinoplastica Siena, blefaroplastica, filler, botulino, medicina estetica" />
+  <meta name="author" content="Dott. Riccardo Mario Piane" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://riccardomariopiane.it/" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Dott. Riccardo Mario Piane - ORL e Chirurgo Maxillo-Facciale" />
+  <meta property="og:description" content="Visite ORL, chirurgia maxillo-facciale ed estetica. Riceve a Siena, Lucca, Poggibonsi e Coreglia." />
+  <meta property="og:url" content="https://riccardomariopiane.it/" />
+  <meta property="og:image" content="https://riccardomariopiane.it/foto.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dott. Riccardo Mario Piane - ORL e Chirurgo Maxillo-Facciale" />
+  <meta name="twitter:description" content="Prenota una visita ORL, chirurgia maxillo-facciale ed estetica." />
+  <meta name="twitter:image" content="https://riccardomariopiane.it/foto.jpg" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dott. Riccardo Mario Piane",
+    "givenName": "Riccardo Mario",
+    "familyName": "Piane",
+    "medicalSpecialty": ["Otorinolaringoiatria","Chirurgia Maxillo-Facciale","Medicina Estetica"],
+    "jobTitle": "Otorinolaringoiatra e Chirurgo Maxillo-Facciale",
+    "url": "https://riccardomariopiane.it/",
+    "image": "https://riccardomariopiane.it/foto.jpg",
+    "email": "mailto:rm.piane@yahoo.com",
+    "telephone": "+39 351 562 9186",
+    "address": { "@type": "PostalAddress", "addressRegion": "Toscana", "addressCountry": "IT" },
+    "areaServed": ["Siena","Lucca","Poggibonsi","Coreglia"]
+  }
+  </script>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #f7f9fc; color: #333; }
-    header { background: linear-gradient(to right, #1a4e8a, #2b4c7e); color: white; text-align: center; padding: 60px 20px; }
-    header h1 { margin: 0; font-size: 2.5em; }
-    header h2 { margin-top: 10px; font-weight: normal; font-size: 1.3em; }
-    .section { padding: 60px 20px; max-width: 1000px; margin: auto; }
-    .bio { display: flex; flex-wrap: wrap; align-items: center; gap: 30px; }
-    .bio img { width: 200px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    .bio p { flex: 1; font-size: 1.1em; line-height: 1.8; }
-    .grid-places { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; }
-    .grid-places div { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-    .grid-places a { display: block; color: #1a4e8a; margin: 5px 0; text-decoration: none; }
-    .btn { display: inline-block; margin: 10px 10px 0 0; padding: 10px 20px; background: #1a4e8a; color: white; border: none; border-radius: 5px; text-decoration: none; transition: background 0.3s; }
+    header { background: linear-gradient(to right, #1a4e8a, #2b4c7e); color: #fff; text-align: center; padding: 60px 20px; }
+    header h1 { margin: 0; font-size: 2.2rem; }
+    header h2 { margin-top: 10px; font-weight: 400; font-size: 1.2rem; opacity: .95; }
+    .section { padding: 56px 20px; max-width: 1000px; margin: auto; }
+    .bio { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; }
+    .bio img { width: 200px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,.1); }
+    .bio .text { flex: 1; }
+    .bio p { font-size: 1.06rem; line-height: 1.75; margin: 0 0 8px; }
+    .btn { display: inline-block; margin: 12px 12px 0 0; padding: 10px 18px; background: #1a4e8a; color: #fff; border-radius: 6px; text-decoration: none; transition: background .25s; }
     .btn:hover { background: #163e6b; }
-    .operating-room { text-align: center; animation: fadeIn 2s ease-in; }
-    .operating-room h3 { font-size: 1.8em; color: #1a4e8a; margin-bottom: 20px; }
-    .operating-room img { width: 300px; height: 200px; object-fit: cover; border-radius: 12px; margin: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
-    .operating-room p { margin-top: 30px; font-size: 1.1em; line-height: 1.6; }
-    details { margin-top: 10px; padding: 10px; background: #eaeff5; border-radius: 6px; }
+    h3 { color: #1a4e8a; font-size: 1.4rem; margin: 0 0 18px; }
+    .grid-places { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; }
+    .grid-places div { background: #fff; padding: 16px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,.05); }
+    .grid-places a { display: block; color: #1a4e8a; margin: 4px 0; text-decoration: none; }
+    .operating-room { text-align: center; animation: fadeIn 1.2s ease-in; }
+    .operating-room img { width: 300px; height: 200px; object-fit: cover; border-radius: 12px; margin: 10px; box-shadow: 0 4px 12px rgba(0,0,0,.1); }
+    .operating-room p { margin-top: 14px; font-size: 1.06rem; line-height: 1.6; }
+    details { margin-top: 10px; padding: 12px; background: #eaeff5; border-radius: 8px; }
     summary { font-weight: 600; cursor: pointer; }
-    form { margin-top: 30px; }
-    form input, form textarea { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ccc; border-radius: 4px; }
-    form button { margin-top: 10px; background: #1a4e8a; color: white; border: none; padding: 12px 24px; border-radius: 5px; cursor: pointer; }
+    form { margin-top: 22px; }
+    form input, form textarea { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #cdd6e1; border-radius: 6px; background: #fff; }
+    form button { margin-top: 12px; background: #1a4e8a; color: #fff; border: 0; padding: 12px 24px; border-radius: 6px; cursor: pointer; }
     form button:hover { background: #163e6b; }
-    @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Dott. Riccardo Mario Piane</h1>
-    <h2>Otorinolaringoiatra, Chirurgo Maxillo‑Facciale e Medico Estetico</h2>
+    <h2>Otorinolaringoiatra, Chirurgo Maxillo-Facciale e Medico Estetico</h2>
   </header>
 
-  <div class="section bio">
-    <img src="foto.jpg" alt="Foto professionale">
-    <p>Direttore dell'Unità Operativa di ORL presso l'Ospedale San Luca di Lucca dal 2001 al dicembre 2024. Specializzato in chirurgia oncologica cervico-cefalica, chirurgia endoscopica dei seni paranasali, maxillo-facciale, dell'orbita e delle vie lacrimali e medicina estetica. Ha eseguito 12.000 interventi, docente come professore a contratto, relatore e autore di oltre 160 pubblicazioni scientifiche e organizzatore di 75 convegni, corsi di aggiornamento e live surgery.</p>
-  </div>
+  <section class="section bio">
+    <img src="foto.jpg" alt="Dott. Riccardo Mario Piane, otorinolaringoiatra">
+    <div class="text">
+      <p>Direttore dell'Unità Operativa di ORL presso l'Ospedale San Luca di Lucca dal 2001 al dicembre 2024. Specializzato in chirurgia oncologica cervico-cefalica, chirurgia endoscopica dei seni paranasali, maxillo-facciale, dell'orbita e delle vie lacrimali e medicina estetica. Ha eseguito oltre 12.000 interventi, relatore e autore di più di 160 pubblicazioni scientifiche, organizzatore di 75 convegni e live surgery.</p>
+      <a href="chi-sono.html" class="btn">Chi sono</a>
+    </div>
+  </section>
 
-  <div class="section">
+  <section class="section">
     <h3>Servizi</h3>
     <ul>
       <li>Visite ORL</li>
       <li>Chirurgia ORL</li>
-      <li>Chirurgia estetica rinoplastica, blefaroplastiche e otoplastiche</li>
+      <li>Chirurgia estetica: rinoplastica, blefaroplastica, otoplastica</li>
       <li>Chirurgia dell'orecchio</li>
       <li>Chirurgia dell'orbita e vie lacrimali</li>
       <li>Chirurgia maxillo-facciale</li>
       <li>Medicina estetica: filler, botulino, fili, biorivitalizzazione</li>
     </ul>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="section">
     <h3>Dove ricevo</h3>
     <div class="grid-places">
-      <div><a href="https://maps.google.com/?q=Performance+2+Siena" target="_blank">SIENA – Performance 2 (ORL)</a><a href="tel:0577226313">Tel. 0577 226313</a></div>
-      <div><a href="https://maps.google.com/?q=Equocenter+Siena" target="_blank">SIENA – EquoCenter (Medicina Estetica)</a><a href="tel:0577588345">Tel. 0577 588345</a></div>
-      <div><a href="https://maps.google.com/?q=Performance+Poggibonsi" target="_blank">POGGIBONSI – Performance</a><a href="tel:0577985553">Tel. 0577 985553</a></div>
-      <div><a href="https://maps.google.com/?q=Studi+Medici+Marlia+Lucca" target="_blank">LUCCA – Studi Medici Marlia</a><a href="tel:0583407771">Tel. 0583 407771</a></div>
-      <div><a href="https://maps.google.com/?q=Centro+Medico+Lucchese+Coreglia" target="_blank">PIANO DI COREGLIA – Centro Medico Lucchese</a><a href="tel:05831801801">Tel. 0583 1801801</a></div>
+      <div><a href="https://maps.google.com/?q=Performance+2+Siena" target="_blank">SIENA – Performance 2 (ORL)</a><a href="tel:0577226313">Tel. 0577 226313</a></div>
+      <div><a href="https://maps.google.com/?q=Equocenter+Siena" target="_blank">SIENA – EquoCenter (Medicina Estetica)</a><a href="tel:0577588345">Tel. 0577 588345</a></div>
+      <div><a href="https://maps.google.com/?q=Performance+Poggibonsi" target="_blank">POGGIBONSI – Performance</a><a href="tel:0577985553">Tel. 0577 985553</a></div>
+      <div><a href="https://maps.google.com/?q=Studi+Medici+Marlia+Lucca" target="_blank">LUCCA – Studi Medici Marlia</a><a href="tel:0583407771">Tel. 0583 407771</a></div>
+      <div><a href="https://maps.google.com/?q=Centro+Medico+Lucchese+Coreglia" target="_blank">PIANO DI COREGLIA – Centro Medico Lucchese</a><a href="tel:05831801801">Tel. 0583 1801801</a></div>
     </div>
-  </div>
+  </section>
 
-  <div class="section operating-room">
+  <section class="section operating-room">
     <h3>Dove opero</h3>
-    <img src="sala_operatoria.jpg" alt="Dottore in sala operatoria">
-    <img src="paziente_estetica.png" alt="paziente estetica">
-    <p>SIENA – <a href="https://maps.google.com/?q=Rugani+Hospital+Siena" target="_blank">Rugani Hospital</a><br>
-    Struttura accreditata per interventi di ORL, chirurgia maxillo‑facciale, orbita, vie lacrimali ed estetica facciale.</p>
-  </div>
+    <img src="sala_operatoria.jpg" alt="Intervento in sala operatoria">
+    <img src="paziente_estetica.png" alt="Trattamento di medicina estetica">
+    <p>SIENA – <a href="https://maps.google.com/?q=Rugani+Hospital+Siena" target="_blank">Rugani Hospital</a><br>Struttura accreditata per interventi di ORL, chirurgia maxillo-facciale, orbita, vie lacrimali ed estetica facciale.</p>
+  </section>
 
-  <div class="section">
+  <section class="section">
     <h3>Approfondimenti</h3>
     <details><summary>Quando è utile una visita ORL?</summary><p><a href="approfondimenti/approfondimento1.html">Leggi l'approfondimento</a></p></details>
     <details><summary>Chirurgia nasale: funzionale vs estetica</summary><p><a href="approfondimenti/approfondimento2.html">Leggi l'approfondimento</a></p></details>
-    <details><summary>Prima del filler, botulino e altri trattamenti...</summary><p><a href="approfondimenti/approfondimento3.html">Leggi l'approfondimento</a></p></details>
+    <details><summary>Prima del filler, botulino e altri trattamenti</summary><p><a href="approfondimenti/approfondimento3.html">Leggi l'approfondimento</a></p></details>
     <details><summary>Chirurgia dei seni paranasali (FESS)</summary><p><a href="approfondimenti/approfondimento4.html">Leggi l'approfondimento</a></p></details>
     <details><summary>Perché scegliere la DCR endoscopica?</summary><p><a href="approfondimenti/approfondimento5.html">Leggi l'approfondimento</a></p></details>
     <details><summary>Sinusiti odontogene</summary><p><a href="approfondimenti/approfondimento6.html">Leggi l'approfondimento</a></p></details>
-    <details><summary>Valutazione ossea pre‑implantare</summary><p><a href="approfondimenti/approfondimento7.html">Leggi l'approfondimento</a></p></details>
-  </div>
+    <details><summary>Valutazione ossea pre-implantare</summary><p><a href="approfondimenti/approfondimento7.html">Leggi l'approfondimento</a></p></details>
+  </section>
 
-  <div class="section">
+  <section class="section">
     <a href="cv.pdf" class="btn">Scarica Curriculum</a>
-  </div>
+  </section>
 
-  <div class="section">
+  <section class="section">
     <h3>Contatti</h3>
     <p>Email: <a href="mailto:rm.piane@yahoo.com">rm.piane@yahoo.com</a></p>
     <p>Telefono: <a href="tel:+393515629186">351 562 9186</a></p>
+
+    <!-- Formspree -->
     <form action="https://formspree.io/f/manbapwn" method="POST">
       <input type="text" name="nome" placeholder="Nome" required>
       <input type="email" name="_replyto" placeholder="Email" required>
       <textarea name="messaggio" rows="4" placeholder="Il tuo messaggio" required></textarea>
-      <input type="hidden" name="_redirect" value="https://rmpiane.github.io/sito-dott-piane/grazie.html">
+      <input type="hidden" name="_redirect" value="https://riccardomariopiane.it/grazie.html">
       <button type="submit">Invia messaggio</button>
     </form>
-  </div>
+  </section>
+
 </body>
 </html>

@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://rmpiane.github.io/sito-dott-piane/sitemap.xml
+
+Sitemap: https://riccardomariopiane.it/sitemap.xml
