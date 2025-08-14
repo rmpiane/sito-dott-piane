@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Articoli e Interviste – Dott. Riccardo Mario Piane</title>
+  <meta name="description" content="Selezione di articoli online e documenti PDF (programmi di convegni) del Dott. Riccardo Mario Piane." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://riccardomariopiane.it/articoli.html" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{ --primary:#1a4e8a; --primary2:#2b4c7e; --bg:#f7f9fc; --card:#fff; --text:#333; --muted:#5b6b7c; }
+    html{ scroll-behavior:smooth; }
+    body{ font-family:'Inter',sans-serif; margin:0; background:var(--bg); color:var(--text); }
+    header{ background:linear-gradient(to right,var(--primary),var(--primary2)); color:#fff; text-align:center; padding:56px 20px; position:relative; }
+    header h1{ margin:0; font-size:2rem; }
+    header p{ opacity:.95; margin-top:8px; }
+    .nav{ position:absolute; left:16px; top:16px; display:flex; gap:8px; flex-wrap:wrap; }
+    .nav a{ color:#fff; background:rgba(255,255,255,.15); padding:8px 12px; border-radius:8px; text-decoration:none; }
+
+    .wrap{ max-width:1100px; margin:32px auto; padding:0 20px; }
+    h2{ color:var(--primary); margin:8px 0 16px; }
+    .section-note{color:var(--muted); font-size:.95rem; margin-top:-6px; margin-bottom:14px;}
+
+    .srch{ margin:12px 0 24px; display:flex; gap:10px; flex-wrap:wrap; }
+    .srch input{ flex:1; min-width:260px; padding:10px 12px; border:1px solid #cdd6e1; border-radius:8px; }
+
+    .grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:18px; }
+    .card{ background:var(--card); border-radius:12px; box-shadow:0 6px 18px rgba(0,0,0,.06); overflow:hidden; display:flex; flex-direction:column; transition:transform .2s ease, box-shadow .2s ease; }
+    .card:hover{ transform:translateY(-3px); box-shadow:0 10px 24px rgba(0,0,0,.08); }
+    .content{ padding:16px; }
+    .meta{ font-size:.9rem; color:var(--muted); margin-bottom:6px; }
+    .title{ font-size:1.05rem; margin:8px 0 10px; color:var(--primary); word-break:break-word; }
+    .desc{ font-size:.95rem; line-height:1.55; margin:0 0 12px; }
+    .actions{ margin-top:auto; padding:0 16px 16px; }
+    .btn{ display:inline-block; background:var(--primary); color:#fff; text-decoration:none; padding:10px 14px; border-radius:8px; }
+    .btn:hover{ background:#163e6b; }
+
+    footer{ text-align:center; color:#667; padding:28px 16px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="nav">
+      <a href="index.html">⬅ Home</a>
+      <a href="javascript:history.back()">↩ Torna indietro</a>
+    </nav>
+    <h1>Articoli e Interviste</h1>
+    <p>Selezione di articoli online e documenti (PDF) relativi a convegni ed eventi.</p>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ===== Articoli Online ===== -->
+    <section>
+      <h2>Articoli online</h2>
+      <div class="section-note">Rassegna stampa e profili esterni.</div>
+
+      <div class="srch">
+        <input type="search" id="q" placeholder="Cerca per titolo o testata…" aria-label="Cerca articoli">
+      </div>
+
+      <div class="grid" id="articles">
+        <article class="card">
+          <div class="content">
+            <div class="meta">La Nazione</div>
+            <div class="title">Riccardo Mario Piane</div>
+            <p class="desc">Profilo e attività.</p>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://www.lanazione.it/lucca/cronaca/riccardo-mario-piane-otorino-kn112hwh" target="_blank" rel="noopener">Leggi l’articolo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="content">
+            <div class="meta">La Nazione Siena</div>
+            <div class="title">L’otorinolaringoiatra Riccardo Mario Piane</div>
+            <p class="desc">Intervista/servizio sulla pratica clinica.</p>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://www.lanazione.it/siena/cronaca/lotorinolaringoiatra-riccardo-mario-piane-al-beb0635a" target="_blank" rel="noopener">Leggi l’articolo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="content">
+            <div class="meta">GHC</div>
+            <div class="title">Profilo professionale</div>
+            <p class="desc">Esperienza e aree di competenza.</p>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://www.ghcspa.com/node/4628" target="_blank" rel="noopener">Visita la pagina</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="content">
+            <div class="meta">Il Tirreno</div>
+            <div class="title">Il medico che non vi farà perdere la testa</div>
+            <p class="desc">Articolo divulgativo.</p>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://www.iltirreno.it/toscana/2019/11/21/news/il-medico-che-non-vi-fara-perdere-la-testa-1.37928292" target="_blank" rel="noopener">Leggi l’articolo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="content">
+            <div class="meta">Il Tirreno Lucca</div>
+            <div class="title">Un riconoscimento per l’otorino Piane</div>
+            <p class="desc">Riconoscimento professionale.</p>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://www.iltirreno.it/lucca/cronaca/2018/04/28/news/un-riconoscimento-per-l-otorino-piane-1.16771142" target="_blank" rel="noopener">Leggi l’articolo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="content">
+            <div class="meta">Lucca in Diretta</div>
+            <div class="title">San Luca Otorinolaringoiatria al top per la prevenzione tumori</div>
+            <p class="desc">Iniziative di prevenzione.</p>
+          </div>
+          <div class="actions">
+            <a class="btn" href="https://www.luccaindiretta.it/dalla-citta/2014/08/06/san-luca-otorinolaringoiatria-al-top-per-la-prevenzione-tumori/31021/" target="_blank" rel="noopener">Leggi l’articolo</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== Documenti PDF ===== -->
+    <section>
+      <h2>Documenti PDF</h2>
+      <div class="section-note">Programmi di convegni ed articoli in PDF (scaricabili).</div>
+
+      <div class="grid">
+        <!-- Link RELATIVI: funzionano sia su dominio che su GitHub sottocartella -->
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">vestibologia-2024.pdf</div></div><div class="actions"><a class="btn" href="pdf/vestibologia-2024.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">vestibologia-2023.pdf</div></div><div class="actions"><a class="btn" href="pdf/vestibologia-2023.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">vestibologia-2022.pdf</div></div><div class="actions"><a class="btn" href="pdf/vestibologia-2022.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">vestibologia-2021.pdf</div></div><div class="actions"><a class="btn" href="pdf/vestibologia-2021.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">vestibologia-2018.pdf</div></div><div class="actions"><a class="btn" href="pdf/vestibologia-2018.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">vestibologia-2017.pdf</div></div><div class="actions"><a class="btn" href="pdf/vestibologia-2017.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">oncologia-2022.pdf</div></div><div class="actions"><a class="btn" href="pdf/oncologia-2022.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">onc-piane-programma-2018.pdf</div></div><div class="actions"><a class="btn" href="pdf/onc-piane-programma-2018.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">aoico-2020.pdf</div></div><div class="actions"><a class="btn" href="pdf/aoico-2020.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+
+        <!-- Correzione chiesta: chirurgia-endoscopica.pdf -->
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">chirurgia-endoscopica.pdf</div></div><div class="actions"><a class="btn" href="pdf/chirurgia-endoscopica.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">articolo-piane.pdf</div></div><div class="actions"><a class="btn" href="pdf/articolo-piane.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">articolo-nazione-2018-ott.pdf</div></div><div class="actions"><a class="btn" href="pdf/articolo-nazione-2018-ott.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">san-luca-allavanguardia-nel-campo-dell-otorinolaringoiatria.pdf</div></div><div class="actions"><a class="btn" href="pdf/san-luca-allavanguardia-nel-campo-dell-otorinolaringoiatria.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+        <article class="card"><div class="content"><div class="meta">PDF</div><div class="title">san-luca-otorinolaringoiatria-al-top-per-la-prevenzione-tumori.pdf</div></div><div class="actions"><a class="btn" href="pdf/san-luca-otorinolaringoiatria-al-top-per-la-prevenzione-tumori.pdf" target="_blank" rel="noopener">Apri PDF</a></div></article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>© <span id="y"></span> Dott. Riccardo Mario Piane</footer>
+
+  <script>
+    // anno footer
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // ricerca client-side semplice sugli Articoli online
+    const q = document.getElementById('q');
+    const cards = Array.from(document.querySelectorAll('#articles .card'));
+    q.addEventListener('input', () => {
+      const term = q.value.toLowerCase().trim();
+      cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(term) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>
