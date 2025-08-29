@@ -3,129 +3,245 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Dr. Riccardo Mario Piane – ENT Specialist & Maxillofacial Surgeon</title>
-  <meta name="description" content="Official website of Dr. Riccardo Mario Piane, ENT specialist, maxillofacial surgeon and aesthetic medicine. Clinics in Siena, Lucca, Poggibonsi and Coreglia." />
-  <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://riccardomariopiane.it/index-en.html" />
-  <!-- hreflang -->
-  <link rel="alternate" href="https://riccardomariopiane.it/" hreflang="it" />
-  <link rel="alternate" href="https://riccardomariopiane.it/index-en.html" hreflang="en" />
-  <link rel="alternate" href="https://riccardomariopiane.it/" hreflang="x-default" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Dr. Riccardo Mario Piane – ENT & Maxillofacial Surgeon" />
-  <meta property="og:description" content="ENT consultations, maxillofacial and facial aesthetic surgery. Clinics in Siena, Lucca, Poggibonsi, Coreglia." />
-  <meta property="og:url" content="https://riccardomariopiane.it/index-en.html" />
-  <meta property="og:image" content="https://riccardomariopiane.it/foto.jpg" />
-
+  <title>Dr. Riccardo Mario Piane – ENT, Maxillofacial Surgery, Aesthetic Medicine</title>
+  <meta name="description" content="Official website of Dr. Riccardo Mario Piane: ENT Specialist, Maxillofacial Surgery and Aesthetic Medicine. Clinics in Siena, Lucca, Poggibonsi and Piano di Coreglia. Clinical insights, articles and contacts." />
+  <meta name="author" content="Dr. Riccardo Mario Piane" />
+  <meta name="format-detection" content="telephone=yes" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    html { scroll-behavior: smooth; }
-    body { font-family:'Inter',sans-serif; margin:0; padding:0; background:#f7f9fc; color:#333; }
-    header { position:relative; background:linear-gradient(to right,#1a4e8a,#2b4c7e); color:#fff; text-align:center; padding:60px 20px; }
-    header h1 { margin:0; font-size:2.2rem; }
-    header h2 { margin-top:10px; font-weight:400; font-size:1.2rem; opacity:.95; }
-    .lang-switch { position:absolute; right:16px; top:16px; }
-    .lang-switch a { color:#fff; background:rgba(255,255,255,.15); padding:8px 12px; border-radius:8px; text-decoration:none; }
-    .section { padding:56px 20px; max-width:1000px; margin:auto; }
-    .bio { display:flex; flex-wrap:wrap; align-items:center; gap:28px; }
-    .bio img { width:200px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,.1); }
-    .bio .text { flex:1; }
-    .bio p { font-size:1.06rem; line-height:1.75; margin:0 0 8px; }
-    .btn { display:inline-block; margin:12px 12px 0 0; padding:10px 18px; background:#1a4e8a; color:#fff; border-radius:6px; text-decoration:none; transition:background .25s; }
-    .btn:hover { background:#163e6b; }
-    h3 { color:#1a4e8a; font-size:1.4rem; margin:0 0 18px; }
-    .grid-places { display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:18px; }
-    .grid-places div { background:#fff; padding:16px; border-radius:10px; box-shadow:0 2px 10px rgba(0,0,0,.05); }
-    .grid-places a { display:block; color:#1a4e8a; margin:4px 0; text-decoration:none; }
-    .operating-room { text-align:center; animation:fadeIn 1.2s ease-in; }
-    .operating-room img { width:300px; height:200px; object-fit:cover; border-radius:12px; margin:10px; box-shadow:0 4px 12px rgba(0,0,0,.1); }
-    .operating-room p { margin-top:14px; font-size:1.06rem; line-height:1.6; }
-    details { margin-top:10px; padding:12px; background:#eaeff5; border-radius:8px; }
-    summary { font-weight:600; cursor:pointer; }
-    form { margin-top:22px; }
-    form input, form textarea { width:100%; padding:10px; margin-top:10px; border:1px solid #cdd6e1; border-radius:6px; background:#fff; }
-    form button { margin-top:12px; background:#1a4e8a; color:#fff; border:0; padding:12px 24px; border-radius:6px; cursor:pointer; }
-    form button:hover { background:#163e6b; }
-    @keyframes fadeIn { from{opacity:0; transform:translateY(8px)} to{opacity:1; transform:translateY(0)} }
+    :root{
+      --primary:#1a4e8a; --secondary:#2b4c7e; --bg:#f7f9fc; --text:#333;
+      --card:#fff; --muted:#6b7280; --ring:rgba(26,78,138,.12)
+    }
+    html{scroll-behavior:smooth}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.75}
+    a{color:var(--primary);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header{background:linear-gradient(90deg,var(--primary),var(--secondary));color:#fff;padding:56px 16px;text-align:center}
+    header h1{margin:0;font-size:2.2rem}
+    header p{margin:.5rem 0 0;opacity:.95}
+    nav{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+    nav a{color:#e9eef7;border:1px solid rgba(255,255,255,.25);padding:8px 12px;border-radius:999px}
+    nav a:hover{background:rgba(255,255,255,.1)}
+    .section{max-width:1000px;margin:48px auto;padding:0 18px}
+    .section h2{margin:0 0 18px;color:#0f3d72;font-size:1.8rem}
+    .bio{display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:center;background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 24px var(--ring)}
+    .bio img{width:120px;height:120px;object-fit:cover;border-radius:12px}
+    .cta{display:inline-block;background:var(--primary);color:#fff;padding:10px 16px;border-radius:10px}
+    .cta:hover{background:#163e6b}
+    .grid-places{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+    .place{background:var(--card);border-radius:12px;padding:16px;box-shadow:0 6px 24px var(--ring)}
+    .place h3{margin:0 0 6px;font-size:1.05rem;color:#111827}
+    .badges{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 10px}
+    .badge{font-size:.78rem;background:#eef3fa;color:#0f3d72;border:1px solid #d9e6fb;padding:4px 8px;border-radius:999px}
+    .place a.btn{display:inline-block;margin-top:8px;background:var(--primary);color:#fff;padding:8px 12px;border-radius:8px;text-decoration:none}
+    .place a.btn:hover{background:#163e6b}
+    .meta{font-size:.95rem;color:var(--muted)}
+    .operating{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
+    .operating img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;box-shadow:0 6px 24px var(--ring)}
+    details{background:var(--card);border-radius:10px;padding:12px 14px;margin:10px 0;box-shadow:0 6px 24px var(--ring)}
+    summary{cursor:pointer;font-weight:600;color:#0f3d72}
+    .details-body{margin-top:8px}
+    .chip{display:inline-block;background:#eef3fa;color:#0f3d72;border:1px solid #d9e6fb;border-radius:999px;padding:4px 10px;font-size:.85rem}
+    form{margin-top:14px;background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 24px var(--ring)}
+    label{display:block;font-weight:600;margin-top:10px}
+    input,textarea{width:100%;padding:10px;border:1px solid #d1d5db;border-radius:8px;margin-top:6px;font:inherit}
+    button[type=submit]{margin-top:14px;background:var(--primary);color:#fff;border:none;padding:12px 18px;border-radius:10px;cursor:pointer}
+    button[type=submit]:hover{background:#163e6b}
+    footer{margin-top:48px;background:#0f2543;color:#dbe7ff;text-align:center;padding:22px}
+    @media (max-width:720px){
+      .bio{grid-template-columns:1fr}
+      .operating{grid-template-columns:1fr}
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="lang-switch"><a href="index.html" hreflang="it">Italiano</a></div>
     <h1>Dr. Riccardo Mario Piane</h1>
-    <h2>ENT Specialist, Maxillofacial Surgeon & Aesthetic Medicine</h2>
+    <p>ENT • Maxillofacial Surgery • Aesthetic Medicine</p>
+    <nav>
+      <a href="#who-i-am">Who I am</a>
+      <a href="#clinics">Clinics</a>
+      <a href="#surgery">Where I operate</a>
+      <a href="#insights">Insights</a>
+      <a href="#articles">Articles</a>
+      <a href="#contacts">Contacts</a>
+      <!-- Switch to Italian -->
+      <a href="index.html" lang="it" hreflang="it">IT</a>
+    </nav>
   </header>
 
-  <section class="section bio">
-    <img src="foto.jpg" alt="Dr. Riccardo Mario Piane, ENT specialist">
-    <div class="text">
-      <p>Former Director of the ENT Unit at San Luca Hospital in Lucca (2001–Dec 2024). Expertise in head & neck oncology, endoscopic sinus surgery, maxillofacial surgery, orbital and lacrimal pathways surgery, and aesthetic medicine. Over 12,000 procedures performed; speaker and author of 160+ scientific publications; organiser of 75 conferences and live surgeries.</p>
-      <a href="chi-sono.html" class="btn">About me (IT)</a>
+  <!-- WHO I AM -->
+  <section id="who-i-am" class="section">
+    <div class="bio">
+      <img src="foto.jpg" alt="Dr. Riccardo Mario Piane portrait">
+      <div>
+        <h2 style="margin:0 0 8px">Who I am</h2>
+        <p>Former Head of the ENT Unit at San Luca Hospital in Lucca (2001–Dec 2024). Specialized in head & neck oncologic surgery, endoscopic sinus surgery, maxillofacial, orbital and lacrimal duct surgery, and aesthetic medicine. More than 12,000 surgeries performed; lecturer and contract professor, speaker and author of over 160 scientific publications, organizer of 75 congresses, training courses and live surgeries.</p>
+        <a class="cta" href="cv.pdf" target="_blank" rel="noopener">Download CV (PDF)</a>
+      </div>
     </div>
   </section>
 
-  <section class="section">
-    <h3>Services</h3>
-    <ul>
-      <li>ENT consultations</li>
-      <li>ENT surgery</li>
-      <li>Facial aesthetic surgery: rhinoplasty, blepharoplasty, otoplasty</li>
-      <li>Ear surgery</li>
-      <li>Orbital and lacrimal pathways surgery</li>
-      <li>Maxillofacial surgery</li>
-      <li>Aesthetic medicine: fillers, botulinum toxin, threads, biorevitalisation</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h3>Clinics</h3>
+  <!-- CLINICS -->
+  <section id="clinics" class="section">
+    <h2>Clinics</h2>
     <div class="grid-places">
-      <div><a href="https://maps.google.com/?q=Performance+2+Siena" target="_blank">SIENA – Performance 2 (ENT)</a><a href="tel:0577226313">Tel. +39 0577 226313</a></div>
-      <div><a href="https://maps.google.com/?q=Equocenter+Siena" target="_blank">SIENA – EquoCenter (Aesthetic Medicine)</a><a href="tel:0577588345">Tel. +39 0577 588345</a></div>
-      <div><a href="https://maps.google.com/?q=Performance+Poggibonsi" target="_blank">POGGIBONSI – Performance</a><a href="tel:0577985553">Tel. +39 0577 985553</a></div>
-      <div><a href="https://maps.google.com/?q=Studi+Medici+Marlia+Lucca" target="_blank">LUCCA – Studi Medici Marlia</a><a href="tel:0583407771">Tel. +39 0583 407771</a></div>
-      <div><a href="https://maps.google.com/?q=Centro+Medico+Lucchese+Coreglia" target="_blank">PIANO DI COREGLIA – Centro Medico Lucchese</a><a href="tel:05831801801">Tel. +39 0583 1801801</a></div>
+      <article class="place">
+        <h3>SIENA – Performance 2</h3>
+        <div class="badges">
+          <span class="badge">ENT consultations</span>
+          
+        </div>
+        <div class="meta">Tel. <a href="tel:+390577226313">0577 226313</a></div>
+        <a class="btn" href="https://maps.google.com/?q=Performance+2+Siena" target="_blank" rel="noopener">Open in Google Maps</a>
+      </article>
+
+      <article class="place">
+        <h3>SIENA – EquoCenter</h3>
+        <div class="badges">
+          <span class="badge">Aesthetic Medicine</span>
+          <span class="badge">Pre-treatment evaluation</span>
+        </div>
+        <div class="meta">Tel. <a href="tel:+390577588345">0577 588345</a></div>
+        <a class="btn" href="https://maps.google.com/?q=Equocenter+Siena" target="_blank" rel="noopener">Open in Google Maps</a>
+      </article>
+
+      <article class="place">
+        <h3>POGGIBONSI – Performance</h3>
+        <div class="badges">
+          <span class="badge">ENT consultations</span>
+        </div>
+        <div class="meta">Tel. <a href="tel:+390577985553">0577 985553</a></div>
+        <a class="btn" href="https://maps.google.com/?q=Performance+Poggibonsi" target="_blank" rel="noopener">Open in Google Maps</a>
+      </article>
+
+      <article class="place">
+        <h3>LUCCA – Studi Medici Marlia</h3>
+        <div class="badges">
+          <span class="badge">ENT consultations and Aesthetic Medicine</span>
+        </div>
+        <div class="meta">Tel. <a href="tel:+390583407771">0583 407771</a></div>
+        <a class="btn" href="https://maps.google.com/?q=Studi+Medici+Marlia+Lucca" target="_blank" rel="noopener">Open in Google Maps</a>
+      </article>
+
+      <article class="place">
+        <h3>PIANO DI COREGLIA – Centro Medico Lucchese</h3>
+        <div class="badges">
+          <span class="badge">ENT consultations and Aesthetic Medicine</span>
+        </div>
+        <div class="meta">Tel. <a href="tel:+3905831801801">0583 1801801</a></div>
+        <a class="btn" href="https://maps.google.com/?q=Centro+Medico+Lucchese+Coreglia" target="_blank" rel="noopener">Open in Google Maps</a>
+      </article>
     </div>
   </section>
 
-  <section class="section operating-room">
-    <h3>Where I operate</h3>
-    <img src="sala_operatoria.jpg" alt="Operating room procedure">
-    <img src="paziente_estetica.png" alt="Aesthetic medicine treatment">
-    <p>SIENA – <a href="https://maps.google.com/?q=Rugani+Hospital+Siena" target="_blank">Rugani Hospital</a><br>Accredited facility for ENT, maxillofacial, orbital and lacrimal surgery, and facial aesthetics.</p>
+  <!-- WHERE I OPERATE -->
+  <section id="surgery" class="section">
+    <h2>Where I operate</h2>
+    <div class="operating">
+      <img src="sala_operatoria.jpg" alt="Operating room">
+      <img src="paziente_estetica.png" alt="Aesthetic treatment">
+    </div>
+    <p style="margin-top:14px">
+      <strong>SIENA – <a href="https://maps.google.com/?q=Rugani+Hospital+Siena" target="_blank" rel="noopener">Rugani Hospital</a></strong><br>
+      Accredited facility for ENT, maxillofacial, orbital, lacrimal duct and facial aesthetic surgery.
+    </p>
   </section>
 
-  <section class="section">
-    <h3>Insights</h3>
-    <details><summary>When is an ENT consultation useful?</summary><p><a href="approfondimenti/approfondimento1.html">Read the article (IT)</a></p></details>
-    <details><summary>Nasal surgery: functional vs. aesthetic</summary><p><a href="approfondimenti/approfondimento2.html">Read the article (IT)</a></p></details>
-    <details><summary>Before fillers, botulinum toxin and other treatments</summary><p><a href="approfondimenti/approfondimento3.html">Read the article (IT)</a></p></details>
-    <details><summary>Endoscopic sinus surgery (FESS)</summary><p><a href="approfondimenti/approfondimento4.html">Read the article (IT)</a></p></details>
-    <details><summary>Why choose endoscopic DCR?</summary><p><a href="approfondimenti/approfondimento5.html">Read the article (IT)</a></p></details>
-    <details><summary>Odontogenic sinusitis</summary><p><a href="approfondimenti/approfondimento6.html">Read the article (IT)</a></p></details>
-    <details><summary>Bone assessment for pre‑implant surgery</summary><p><a href="approfondimenti/approfondimento7.html">Read the article (IT)</a></p></details>
+  <!-- INSIGHTS -->
+  <section id="insights" class="section">
+    <h2>Insights</h2>
+
+    <details>
+      <summary>When is an ENT consultation useful?</summary>
+      <div class="details-body">
+        <a class="chip" href="approfondimenti/approfondimento1.html">Read more</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Nasal surgery: functional vs. aesthetic</summary>
+      <div class="details-body">
+        <a class="chip" href="approfondimenti/approfondimento2.html">Read more</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Before filler, botulinum toxin and other treatments</summary>
+      <div class="details-body">
+        <a class="chip" href="approfondimenti/approfondimento3.html">Read more</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Paranasal sinus surgery (FESS)</summary>
+      <div class="details-body">
+        <a class="chip" href="approfondimenti/approfondimento4.html">Read more</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Why choose endoscopic DCR?</summary>
+      <div class="details-body">
+        <a class="chip" href="approfondimenti/approfondimento5.html">Read more</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Odontogenic sinusitis</summary>
+      <div class="details-body">
+        <a class="chip" href="approfondimenti/approfondimento6.html">Read more</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Bone assessment before implants</summary>
+      <div class="details-body">
+        <a class="chip" href="approfondimenti/approfondimento7.html">Read more</a>
+      </div>
+    </details>
+
+    <details>
+      <summary>Eustachian tube surgery</summary>
+      <div class="details-body">
+        <a class="chip" href="approfondimenti/approfondimento8.html">Read more</a>
+      </div>
+    </details>
   </section>
 
-  <section class="section">
-    <a href="cv.pdf" class="btn">Download CV (IT)</a>
+  <!-- ARTICLES -->
+  <section id="articles" class="section">
+    <h2>Articles & Conferences</h2>
+    <p>Collection of press articles and conference programs.</p>
+    <a class="cta" href="articoli.html">See all articles</a>
   </section>
 
-  <section class="section">
-    <h3>Contacts</h3>
-    <p>Email: <a href="mailto:rm.piane@yahoo.com">rm.piane@yahoo.com</a></p>
-    <p>Phone: <a href="tel:+393515629186">+39 351 562 9186</a></p>
+  <!-- CONTACTS -->
+  <section id="contacts" class="section">
+    <h2>Contacts</h2>
+    <p>Phone: <a href="tel:+393515629186">+39 351 562 9186</a> &nbsp;•&nbsp; Email: <a href="mailto:rm.piane@yahoo.com">rm.piane@yahoo.com</a></p>
+
     <form action="https://formspree.io/f/manbapwn" method="POST">
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="email" name="_replyto" placeholder="Email" required>
-      <textarea name="message" rows="4" placeholder="Your message" required></textarea>
-      <input type="hidden" name="_redirect" value="https://riccardomariopiane.it/grazie.html">
+      <label for="name">Name</label>
+      <input id="name" name="name" type="text" placeholder="Your name" required />
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+
       <button type="submit">Send message</button>
     </form>
   </section>
 
+  <footer>
+    <p>&copy; 2025 Dr. Riccardo Mario Piane – All rights reserved</p>
+  </footer>
 </body>
 </html>
