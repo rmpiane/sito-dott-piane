@@ -44,6 +44,16 @@
     /* Dove opero */
     .operating{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:start}
     .operating img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;box-shadow:0 6px 24px var(--ring)}
+    .activity-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}
+    .activity-card{position:relative;overflow:hidden;border-radius:12px;background:var(--card);box-shadow:0 6px 24px var(--ring)}
+    .activity-card img{width:100%;height:310px;object-fit:cover;display:block}
+    .activity-overlay{position:absolute;left:0;right:0;bottom:0;padding:12px 14px;background:linear-gradient(transparent,rgba(5,28,55,.88));color:#fff}
+    .activity-overlay h3{margin:0 0 3px;font-size:1.12rem;color:#fff}
+    .activity-overlay p{margin:0;font-size:.82rem;line-height:1.3}
+    .activity-links{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+    .activity-links a{display:inline-block;background:#fff;color:#0f3d72;padding:5px 8px;border-radius:7px;font-weight:600;font-size:.76rem;text-decoration:none}
+    .activity-links a:hover{background:#eef3fa;text-decoration:none}
+    .activity-note{margin-top:14px;background:var(--card);padding:14px 16px;border-radius:10px;box-shadow:0 6px 24px var(--ring)}
     /* Approfondimenti */
     details{background:var(--card);border-radius:10px;padding:12px 14px;margin:10px 0;box-shadow:0 6px 24px var(--ring)}
     summary{cursor:pointer;font-weight:600;color:#0f3d72}
@@ -60,6 +70,7 @@
     @media (max-width:720px){
       .bio{grid-template-columns:1fr}
       .operating{grid-template-columns:1fr}
+      .activity-grid{grid-template-columns:1fr}
     }
 .btn {
   display:inline-block;
@@ -153,13 +164,13 @@
       </article>
 
       <article class="place">
-        <h3>SIENA – EquoCenter</h3>
+        <h3>SIENA – Medis Medical Beauty</h3>
         <div class="badges">
-          <span class="badge">Medicina estetica</span>
+          <span class="badge">Medicina Estetica</span>
           <span class="badge">Valutazioni pre-trattamento</span>
         </div>
-        <div class="meta">Tel. <a href="tel:+390577588345">0577 588345</a></div>
-        <a class="btn" href="https://maps.google.com/?q=Equocenter+Siena" target="_blank" rel="noopener">Apri in Google Maps</a>
+        <div class="meta">Tel. <a href="tel:+3905771440196">0577 1440196</a></div>
+        <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Medis+Medical+Beauty+Strada+Massetana+Romana+44+Siena" target="_blank" rel="noopener">Apri in Google Maps</a>
       </article>
 
       <article class="place">
@@ -182,17 +193,52 @@
     </div>
   </section>
 
-  <!-- DOVE OPERO -->
+  <!-- ATTIVITÀ PRINCIPALI -->
   <section id="dove-opero" class="section">
-    <h2>Dove opero</h2>
-    <div class="operating">
-      <img src="sala_operatoria.jpg" alt="In sala operatoria">
-      <img src="paziente_estetica.png" alt="Trattamenti estetici">
+    <h2>Le mie attività</h2>
+    <div class="activity-grid">
+
+      <article class="activity-card">
+        <img src="foto_orl.png" alt="Dott. Riccardo Mario Piane - Otorinolaringoiatria">
+        <div class="activity-overlay">
+          <h3>Otorinolaringoiatria</h3>
+          <p>Visite specialistiche ORL</p>
+          <div class="activity-links">
+            <a href="https://maps.google.com/?q=Performance+2+Siena" target="_blank" rel="noopener">Siena</a>
+            <a href="https://maps.google.com/?q=Studi+Medici+Marlia+Lucca" target="_blank" rel="noopener">Lucca – Marlia</a>
+            <a href="https://maps.google.com/?q=Centro+Medico+Lucchese+Coreglia" target="_blank" rel="noopener">Piano di Coreglia</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity-card">
+        <img src="paziente_estetica.png" alt="Medicina estetica - Dott. Riccardo Mario Piane">
+        <div class="activity-overlay">
+          <h3>Medicina Estetica</h3>
+          <p>Trattamenti medici estetici del viso e del corpo</p>
+          <div class="activity-links">
+            <a href="https://maps.google.com/?q=Medis+Medical+Beauty+Siena" target="_blank" rel="noopener">Siena</a>
+            <a href="https://maps.google.com/?q=Studi+Medici+Marlia+Lucca" target="_blank" rel="noopener">Lucca – Marlia</a>
+            <a href="https://maps.google.com/?q=Centro+Medico+Lucchese+Coreglia" target="_blank" rel="noopener">Piano di Coreglia</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="activity-card">
+        <img src="sala_operatoria.jpg" alt="Dott. Riccardo Mario Piane in sala operatoria">
+        <div class="activity-overlay">
+          <h3>Dove opero</h3>
+          <p>Rugani Hospital – Siena</p>
+          <div class="activity-links">
+            <a href="https://maps.google.com/?q=Rugani+Hospital+Siena" target="_blank" rel="noopener">Rugani Hospital</a>
+          </div>
+        </div>
+      </article>
+
     </div>
-    <p style="margin-top:14px">
-      <strong>SIENA – <a href="https://maps.google.com/?q=Rugani+Hospital+Siena" target="_blank" rel="noopener">Rugani Hospital</a></strong><br>
-      Struttura accreditata per interventi di ORL, chirurgia maxillo-facciale, orbita, vie lacrimali e chirurgia estetica facciale.
-    </p>
+    <div class="activity-note">
+      Chirurgia ORL, maxillo-facciale, orbita, vie lacrimali e chirurgia estetica facciale presso Rugani Hospital, Siena.
+    </div>
   </section>
 
    <!-- APPROFONDIMENTI -->
